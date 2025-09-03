@@ -1,0 +1,201 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "admin123",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "elif",
+      "password": "123456",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "username": "berk",
+      "password": "123456",
+      "role": "user"
+    }
+  ],
+  "tickets": [
+    {
+      "id": 4001,
+      "title": "Ödeme ekranı hata veriyor",
+      "category": "billing",
+      "description": "Kredi kartı ile ödeme yaparken 500 hatası alıyorum.",
+      "status": "closed",
+      "ownerId": 2,
+      "ownerName": "elif",
+      "createdAt": "2025-09-03T17:06:21.879674",
+      "approved": true,
+      "approvedAt": "2025-09-03T17:06:21.879674",
+      "approvedById": 1,
+      "approvedByName": "admin"
+    },
+    {
+      "id": 4002,
+      "title": "Giriş yapamıyorum",
+      "category": "technical",
+      "description": "Doğrulama adımında takılıyor.",
+      "status": "in_progress",
+      "ownerId": 2,
+      "ownerName": "elif",
+      "createdAt": "2025-09-03T17:06:21.879674",
+      "approved": false
+    },
+    {
+      "id": 4003,
+      "title": "Genel öneri",
+      "category": "general",
+      "description": "Koyu tema eklenebilir.",
+      "status": "closed",
+      "ownerId": 3,
+      "ownerName": "berk",
+      "createdAt": "2025-09-03T17:06:21.879674",
+      "approved": false
+    },
+    {
+      "title": "test talep",
+      "category": "general",
+      "description": "test talep edildi",
+      "status": "in_progress",
+      "ownerId": 2,
+      "ownerName": "elif",
+      "approved": true,
+      "createdAt": "2025-09-03T17:14:20.386Z",
+      "id": 4004,
+      "approvedAt": "2025-09-03T17:26:53.676Z",
+      "approvedById": 1,
+      "approvedByName": "admin"
+    },
+    {
+      "title": "test talebi 2",
+      "category": "technical",
+      "description": "test talebi 2",
+      "status": "closed",
+      "ownerId": 2,
+      "ownerName": "elif",
+      "approved": false,
+      "createdAt": "2025-09-03T17:25:20.860Z",
+      "id": 4005,
+      "approvedAt": null,
+      "approvedById": null,
+      "approvedByName": null
+    }
+  ],
+  "comments": [
+    {
+      "id": 9301,
+      "ticketId": 4001,
+      "authorId": 2,
+      "authorName": "elif",
+      "message": "Sorun tekrar ediyor.",
+      "createdAt": "2025-09-03T17:06:21.879674"
+    },
+    {
+      "id": 9302,
+      "ticketId": 4001,
+      "authorId": 1,
+      "authorName": "admin",
+      "message": "İnceliyoruz, bilgilendireceğiz.",
+      "createdAt": "2025-09-03T17:06:21.879674"
+    },
+    {
+      "id": 9303,
+      "ticketId": 4002,
+      "authorId": 1,
+      "authorName": "admin",
+      "message": "Logları talep ettik.",
+      "createdAt": "2025-09-03T17:06:21.879674"
+    },
+    {
+      "ticketId": 4002,
+      "authorId": 1,
+      "authorName": "admin",
+      "message": "işlem sağlanıyor",
+      "createdAt": "2025-09-03T17:12:28.900Z",
+      "id": 9304
+    },
+    {
+      "ticketId": 4004,
+      "authorId": 2,
+      "authorName": "elif",
+      "message": "acil bakabilir misiniz?",
+      "createdAt": "2025-09-03T17:14:32.464Z",
+      "id": 9305
+    },
+    {
+      "ticketId": 4005,
+      "authorId": 2,
+      "authorName": "elif",
+      "message": "aciliyeti var.",
+      "createdAt": "2025-09-03T17:25:34.974Z",
+      "id": 9306
+    },
+    {
+      "ticketId": 4004,
+      "authorId": 1,
+      "authorName": "admin",
+      "message": "tabiki",
+      "createdAt": "2025-09-03T17:26:23.967Z",
+      "id": 9307
+    },
+    {
+      "ticketId": 4004,
+      "authorId": 1,
+      "authorName": "admin",
+      "message": "log iletir misiniz?",
+      "createdAt": "2025-09-03T17:26:34.777Z",
+      "id": 9308
+    }
+  ],
+  "operations": [
+    {
+      "id": 5401,
+      "ticketId": 4001,
+      "action": "assigned",
+      "note": "Berk'e atandı",
+      "authorId": 1,
+      "authorName": "admin",
+      "createdAt": "2025-09-03T17:06:21.879674"
+    },
+    {
+      "id": 5402,
+      "ticketId": 4001,
+      "action": "informed_customer",
+      "note": "Müşteri e-posta ile bilgilendirildi",
+      "authorId": 1,
+      "authorName": "admin",
+      "createdAt": "2025-09-03T17:06:21.879674"
+    },
+    {
+      "ticketId": 4002,
+      "action": "requested_logs",
+      "note": "",
+      "authorId": 1,
+      "authorName": "admin",
+      "createdAt": "2025-09-03T17:12:43.437Z",
+      "id": 5403
+    },
+    {
+      "ticketId": 4002,
+      "action": "requested_logs",
+      "note": "talep edildi",
+      "authorId": 1,
+      "authorName": "admin",
+      "createdAt": "2025-09-03T17:13:00.537Z",
+      "id": 5404
+    },
+    {
+      "ticketId": 4004,
+      "action": "requested_logs",
+      "note": "log istendi",
+      "authorId": 1,
+      "authorName": "admin",
+      "createdAt": "2025-09-03T17:26:41.416Z",
+      "id": 5405
+    }
+  ]
+}

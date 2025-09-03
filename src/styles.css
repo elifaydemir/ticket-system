@@ -1,0 +1,31 @@
+:root { --bg:#0b1220; --card:#111a2e; --muted:#8aa0c2; --primary:#4cc9f0; --accent:#f72585; }
+*{box-sizing:border-box}
+html,body,#root{height:100%;margin:0;background:var(--bg);color:#eaf0ff;font-family:Inter,system-ui,Segoe UI,Roboto,Ubuntu,Helvetica,Arial}
+a{color:var(--primary);text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:16px}
+.card{background:linear-gradient(180deg,rgba(255,255,255,.04),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:16px;box-shadow:0 10px 30px rgba(0,0,0,.2)}
+.row{display:flex;gap:12px;flex-wrap:wrap}
+.col{flex:1;min-width:260px}
+.btn{background:var(--primary);color:#0b1220;border:none;padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer}
+.btn.secondary{background:var(--accent);color:#fff}
+.btn.ghost{background:transparent;border:1px solid var(--muted);color:#eaf0ff}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+.input,select,textarea{width:100%;padding:10px 12px;border-radius:10px;border:1px solid rgba(255,255,255,.15);background:#0f1629;color:#eaf0ff}
+.label{font-size:12px;color:var(--muted);margin-bottom:6px;display:block}
+.header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.nav{display:flex;gap:8px;flex-wrap:wrap}
+.badge{padding:4px 8px;border-radius:999px;font-size:12px;border:1px solid rgba(255,255,255,.1)}
+.status-open{background:#112a40;border-color:#1b4b6b;color:#8fd3ff}
+.status-in_progress{background:#332a09;border-color:#574815;color:#ffd166}
+.status-closed{background:#1b2f22;border-color:#2a6f4e;color:#9cffbf}
+.table{width:100%;border-collapse:collapse}
+.table th,.table td{border-bottom:1px solid rgba(255,255,255,.06);text-align:left;padding:8px}
+.muted{color:var(--muted)}
+.chip{padding:4px 10px;background:#15203a;border:1px solid #27406d;border-radius:999px;font-size:12px;color:#a9c6ff}
+.stack{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.right{margin-left:auto}
+.empty{padding:40px;text-align:center;color:var(--muted)}
+.comment{padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,.08);background:#0f1629}
+.comment.me{border-color:rgba(76,201,240,.5);background:#0d1b2a}
+.dis-flex{display: flex;justify-content: end;align-items: center;align-items: center;}
+.width-auto{width: auto;}
